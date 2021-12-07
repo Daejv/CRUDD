@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stiudent</title>
+</head>
+
+<body>
+  <form action="/quotes" method="POST">
+    <input type="number" placeholder="Numer" name="album">
+    <input type="text" placeholder="imie" name="imie">
+    <input type="text" placeholder="nazwisko" name="nazwisko">
+    <button type="submit">Potwierdź</button>
+  </form>
+
+
+
+  <table>
+
+    <tr>
+      
+      <th>Numer</th>
+      <th>Imie</th>
+      <th>Nazwisko</th>
+
+    </tr>
+    
+    <% for(var i=0; i < quotes.length; i++) {%>
+      
+      <tr>
+        
+        
+        <th>
+          <%= quotes[i].album %>
+        </th>
+        <th>
+          <%= quotes[i].imie %>
+        </th>
+        <th>
+          <%= quotes[i].nazwisko %>
+        </th>
+
+
+      </tr>
+      <% } %>
+
+  </table>
+
+
+
+  <div>
+
+
+    <h2>Usuń</h2>
+    <p>Jedziesz muran!</p>
+    <button id="delete-button">Usuń</button>
+
+
+  </div>
+  
+  
+   <div>
+    
+    
+    <h2>Edytuj</h2>
+    <button id="update-button">Replace</button>
+
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OBY NA DWA :C 
